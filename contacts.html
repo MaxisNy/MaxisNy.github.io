@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Maxim Nyanin - contacts</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&family=Merriweather:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom Styles and Overrides -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light d-flex flex-column h-100" id="contacts">
+
+    <!-- Bootstrap Nav Bar here -->
+    <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a id="wordmark" class="navbar-brand" href="index.html">Maxim Nyanin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="process.html">Process</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Jumbotron here -->
+    <!-- https://getbootstrap.com/docs/5.0/examples/jumbotron/ -->
+    <div id="hero" class="p-5 mb-5 bg-dark text-light">
+        <div class="container py-5">
+            <h1 class="display-5">Contacts</h1>
+            <p class="col-md-8 fs-4">Have a question or just want to chat? Email me or message on social media! Follow
+                my Instagram, YouTube, and GitHub for updates and new projects.</p>
+        </div>
+    </div>
+
+    <!-- Contacts Section -->
+    <section class="contact-form">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-7">
+                    <div class="section-title">
+                        <h2>Let's Chat ✉</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <!-- Contact Form goes here -->
+                <div class="col-lg-8">
+                    <form class="needs-validation" novalidate>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="inputName" class="col-sm-4 col-form-label">Full Name</label>
+                                <div class="col-sm-12">
+                                    <input required type="name" class="form-control" id="inputName">
+                                    <div class="invalid-feedback">
+                                        Please enter name.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="inputEmail" class="col-sm-4 col-form-label">Email</label>
+                                <div class="col-sm-12">
+                                    <input required type="email" class="form-control" id="inputEmail">
+                                    <div class="invalid-feedback">
+                                        Please enter valid email address.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="inputSubject" class="col-sm-4 col-form-label">Subject Line</label>
+                                <div class="col-sm-12">
+                                    <input required type="subject" class="form-control" id="inputSubject">
+                                    <div class="invalid-feedback">
+                                        Please enter subject.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <label for="inputMessage" class="col-sm-2 col-form-label">Message</label>
+                                <div class="col-sm-12">
+                                    <textarea required class="form-control" placeholder="Leave a comment here"
+                                        id="contactMessage" style="height: 100px"></textarea>
+                                    <div class="invalid-feedback">
+                                        Please provide message.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Map goes here -->
+                <div class="col-lg-4">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.7976443987973!2d-79.66487814833316!3d43.548259879022666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b43e3135af203%3A0x713c168866b9f492!2sUniversity%20of%20Toronto%20Mississauga!5e0!3m2!1sen!2sbe!4v1656106158048!5m2!1sen!2sbe"
+                            width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  Sticky Footer https://getbootstrap.com/docs/5.0/examples/sticky-footer/ -->
+    <!-- Also Note the classes on the html and body tags -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col my-auto" id="copyright">
+                    <span class="text-white">&copy; 2022-2023 | <a href="index.html">Maxim Nyanin</a></span>
+                </div>
+                <div class="col">
+                    <div class="container" style="display: inline-flex; justify-content: flex-end;">
+                        <div class="footer-icon"><a href="https://github.com/MaxisNy"><i class="fa fa-github"
+                                    style="font-size:30px; color:white"></i></a></div>
+
+                        <div class="footer-icon"><a href="https://www.linkedin.com/in/maxim-nyanin-0373bb1a0/"><i
+                                    class="fa fa-linkedin" style="font-size:30px; color:white"></i></a></div>
+                        <div class="footer-icon" id="last-icon"><a href="mailto:max.nyanin@mail.utoronto.ca"
+                                target="_blank"><i class="fa fa-envelope" style="font-size:30px; color:white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
+    <!-- Bootstrap Javascript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

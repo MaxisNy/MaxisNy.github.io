@@ -1,0 +1,183 @@
+/* Typography */
+body{
+    font-family: 'Noticia Text', serif;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Merriweather', serif;
+}
+p {
+    line-height: 1.75em;
+}
+.badge{
+    font-family: 'Noticia Text', serif;
+}
+
+/* Wordmark */
+#wordmark {
+    font-family: 'Merriweather', serif;
+    font-size: 1.4em;
+}
+#wordmark span {
+    font-family: 'Noticia Text', serif;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+#wordmark svg {
+    fill: #fff;
+}
+
+/* Hero */
+#hero{
+    background-image: url(../img/home-spotlight.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+    background-blend-mode: soft-light;
+}
+
+#about #hero {
+    background-image: url(../img/about-me-spotlight.jpg);
+}
+
+#about #numbers .row{
+    background-color: #ffffff66;  /*rrggbbaa */
+}
+
+#about .progress{
+    height: 100%;
+}
+
+#projects #hero{
+    background-image: none;
+}
+
+#projects #hero video{
+    object-fit: cover;
+    mix-blend-mode: soft-light;
+}
+
+#contacts #hero {
+    background-image: url(../img/contacts-spotlight.jpg);
+}
+
+#process #hero {
+    background-image: url(../img/process-spotlight.jpg);
+}
+
+/* Paragraph */
+.paragraph .inner-text{
+    padding: 1em 5em 0;
+}
+
+.paragraph.bg-dark h2{
+    color: #fff;
+}
+
+.paragraph.bg-dark .inner-text p{
+    color: #fff;
+}
+
+.paragraph .inner-text a{
+    text-decoration: none;
+    color: #a2aca5;
+}
+
+.paragraph .inner-text a:hover{
+    color: #808682;
+}
+
+/* Carousel */
+.carousel-caption{
+    background: #00000066;
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
+.carousel-caption h5, p {
+    font-weight: 700;
+}
+
+/* Cards */
+.card {
+    background-color: #3e3e3e;
+}
+
+.card p {
+    color: #fff;
+}
+
+#projects .card h4, #process .card h4{
+    color: #fff;
+}
+
+#process .card li{
+    color: #fff;
+}
+
+#projects .card .text-container{
+    margin: 1.25em 0;
+}
+
+#process .card li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#process .card li a:hover{
+    color: #a2aca5;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-bottom: 3em;
+}
+
+/* Footer */
+.footer-icon {
+    margin-right: 30px;
+}
+
+#last-icon {
+    margin-right: 0px;
+}
+
+.footer #copyright a{
+    text-decoration: none;
+    color: #a2aca5;
+}
+
+.footer #copyright a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Buttons */
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #7C7668!important;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(100, 96, 87)!important;
+    border: none;
+}
+
+/* Background Colours*/
+.bg-dark {
+    background-color: #3e3e3e!important;
+}
+
+.bg-secondary {
+    background-color: #7C7668!important;
+}
+
+.bg-info {
+    background-color: #a2aca5!important;
+}

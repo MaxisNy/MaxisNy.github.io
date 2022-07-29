@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Maxim Nyanin - projects</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&family=Merriweather:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom Styles and Overrides -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light d-flex flex-column h-100" id="projects">
+
+    <!-- Bootstrap Nav Bar here -->
+    <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a id="wordmark" class="navbar-brand" href="index.html">Maxim Nyanin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="process.html">Process</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Jumbotron here -->
+    <!-- https://getbootstrap.com/docs/5.0/examples/jumbotron/ -->
+    <div id="hero" class="p-0 mb-5 bg-dark text-light position-relative">
+        <video class="card-img-top position-absolute h-100" playsinline autoplay muted loop>
+            <source src="video/projects.mp4" type="video/mp4">
+        </video>
+        <div class="container py-5 position-relative">
+            <h1 class="display-5">Projects</h1>
+            <p class="col-md-8 fs-4">My personal and collaborative projects outside of school, showcasing my skills in
+                graphic design, animation, and coding.</p>
+            <form>
+                <button type="submit" class="btn btn-secondary btn-lg" type="button">
+                    <a href="https://github.com/MaxisNy" target="_blank">visit GitHub</a>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pixel Pirate card -->
+    <!-- https://getbootstrap.com/docs/5.0/components/card/#horizontal -->
+    <section class="container">
+        <div class="card mb-5">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/pixel-pirate.jpg" class="img-fluid rounded-start rounded" alt="Pixel Pirate">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body ps-4">
+                        <h4 class="card-title">Pixel Pirate</h4>
+                        <div class="text-container">
+                            <p class="card-text">Pixel Pirate is a 2D video game created by Maxim Nyanin, Adam Kanoun,
+                                and
+                                Shrivardhan Mishra for UTM PyJaC hackathon 2022. This is a player versus computer game
+                                in
+                                which the player has to defend against an ever-increasing barrage of cannonballs shot at
+                                their ship. The player uses keys to maneuver the pirate character, who uses a shield to
+                                block the incoming projectiles. Endurance is key here! We used Python in a modular
+                                fashion to create the various aspects of the game, from
+                                graphics to cannonball motion.</p>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-md" type="button">
+                            <a href="https://github.com/MaxisNy" target="_blank">learn more</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- To-Do List card -->
+    <!-- https://getbootstrap.com/docs/5.0/components/card/#horizontal -->
+    <section class="container">
+        <div class="card mb-5">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body ps-4">
+                        <h4 class="card-title">To-Do List</h4>
+                        <div class="text-container">
+                            <p class="card-text">A simple to-do list web application that allows to add activities to
+                                the list and remove them once completed. Written using HTML, SASS/CSS, and Vanilla
+                                JavaScript. This to-do list web app is built to be responsive with mobile first in mind.
+                                It also includes accessibility (A11y) features for keyboard navigation
+                                and screen readers. Finally, it utilizes the Web Storage API to create a persistent data
+                                store so the list items reappear any time user visit the web app.</p>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-md" type="button">
+                            <a href="https://github.com/MaxisNy" target="_blank">learn more</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/to-do-list.png" class="img-fluid rounded-start rounded" alt="To-Do List">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Space Shooter card -->
+    <!-- https://getbootstrap.com/docs/5.0/components/card/#horizontal -->
+    <section class="container">
+        <div class="card mb-5">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/space-shooter.png" class="img-fluid rounded-start rounded" alt="Space Shooter">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body ps-4">
+                        <h4 class="card-title">Space Shooter</h4>
+                        <div class="text-container">
+                            <p class="card-text">Space Shooter is a 2D game written in Python using pygame library. The
+                                player gets to control a spaceship using WASD controls, shoot lazer projectiles, and
+                                avoid being hit by the enemie fire. This game is endless with the goal of surviving
+                                enemy waves and preventing them from crossing the bottom of the screen. As the game goes
+                                on, the level counter gets updated showing the current wave of enemies as more of them
+                                gets spawned, thus making the game more challenging.</p>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-md" type="button">
+                            <a href="https://github.com/MaxisNy" target="_blank">learn more</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Sticky Footer https://getbootstrap.com/docs/5.0/examples/sticky-footer/ -->
+    <!-- Also Note the classes on the html and body tags -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col my-auto" id="copyright">
+                    <span class="text-white">&copy; 2022-2023 | <a href="index.html">Maxim Nyanin</a></span>
+                </div>
+                <div class="col">
+                    <div class="container" style="display: inline-flex; justify-content: flex-end;">
+                        <div class="footer-icon"><a href="https://github.com/MaxisNy"><i class="fa fa-github"
+                                    style="font-size:30px; color:white"></i></a></div>
+
+                        <div class="footer-icon"><a href="https://www.linkedin.com/in/maxim-nyanin-0373bb1a0/"><i
+                                    class="fa fa-linkedin" style="font-size:30px; color:white"></i></a></div>
+                        <div class="footer-icon" id="last-icon"><a href="mailto:max.nyanin@mail.utoronto.ca"
+                                target="_blank"><i class="fa fa-envelope" style="font-size:30px; color:white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Javascript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

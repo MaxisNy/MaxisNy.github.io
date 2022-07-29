@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>Maxim Nyanin - home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&family=Merriweather:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom Styles and Overrides -->
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light d-flex flex-column h-100">
+
+    <!-- Bootstrap Nav Bar here -->
+    <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a id="wordmark" class="navbar-brand" href="index.html">Maxim Nyanin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="process.html">Process</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap Jumbotron here -->
+    <!-- https://getbootstrap.com/docs/5.0/examples/jumbotron/ -->
+    <div id="hero" class="p-5 mb-4 bg-dark text-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-6 col-md-3 col-lg-2">
+                    <img class="rounded-circle w-100" src="img/home-headshot.png" alt="Maxim Nyanin">
+                </div>
+                <div class="col-12 col-md-9 col-lg-10">
+                    <h1 class="display-1">Hello there!</h1>
+                    <p class="col-md-8 fs-5">My name is Max and I'm a student at the University of Toronto. I'm
+                        currently pursuing a degree in <span class="badge bg-info text-dark">Digital Enterprise
+                            Management</span> and <span class="badge bg-info text-dark">Computer Science</span>.
+                        Whenever I'm
+                        not asleep or stuck in a rabbit hole of Netflix shows, I like to compose music 🎸 and make video
+                        games 🎲</p>
+                    <form action="about.html">
+                        <button type="submit" class="btn btn-secondary btn-lg" type="button">learn more</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Carousel here -->
+    <section class="container">
+        <section calss="container my-4">
+            <div class="row g-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="col-6 col-md-4">
+                    <img data-bs-target="#projectsCarousel" data-bs-slide-to="0" src="img/pixel-pirate.jpg"
+                        class="d-block w-100 rounded" alt="Projects">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img data-bs-target="#projectsCarousel" data-bs-slide-to="1" src="img/to-do-list.png"
+                        class="d-block w-100 rounded" alt="Projects">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img data-bs-target="#projectsCarousel" data-bs-slide-to="2" src="img/space-shooter.png"
+                        class="d-block w-100 rounded" alt="Projects">
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen-md-down modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">My Projects</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <!-- Carousel goes here -->
+
+                            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/pixel-pirate.jpg" class="d-block w-100 rounded" alt="Projects">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Pixel Pirate</h5>
+                                            <p>Pixel Pirate is a 2D video game created by Maxim Nyanin, Adam Kanoun, and
+                                                Shrivardhan Mishra for UTM PyJaC hackathon 2022.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/to-do-list.png" class="d-block w-100 rounded" alt="Projects">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>To-Do List</h5>
+                                            <p>A simple to-do list web application that allows to add activities to the
+                                                list and remove them once completed. Written using HTML, SASS, and
+                                                JavaScript.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/space-shooter.png" class="d-block w-100 rounded" alt="Projects">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Space Shooter</h5>
+                                            <p>Space Shooter is a 2D game written in Python using pygame library.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"><a href="projects.html">Learn
+                                    more</a></button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+
+    <!-- Card Grid goes here -->
+    <section class="project-cards">
+        <section class="container my-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4 mx-5 px-5">
+                <div class="col px-5">
+                    <div class="card">
+                        <img src="img/resume-icon.svg" class="card-img-top w-25 mx-auto py-3" alt="Resume Icon">
+                        <div class="card-body px-5">
+                            <p class="card-text px-4">As a 4th year UofT student, I have been a part of various clubs and
+                                organizations on campus. This year, I joined ICCIT Council - an academic society that
+                                represents all ICCIT programs - as a VP External On-Campus.</p>
+                        </div>
+                        <button type="button" class="btn btn-primary px-5 my-3 mx-auto">
+                            <a href="docs/resume.pdf" target="_blank">download resume</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col px-5">
+                    <div class="card">
+                        <img src="img/contacts-icon.svg" class="card-img-top w-25 mx-auto py-3" alt="Contacts Icon">
+                        <div class="card-body px-5">
+                            <p class="card-text px-4">I enjoy working with like-minded people whether it is a school
+                                assignment
+                                or an extra-curricualr initiative. I like sharing my creative ideas with others and
+                                learning
+                                new skills through collaboration and brainstorming.</p>
+                        </div>
+                        <button type="button" class="btn btn-primary px-5 my-3 mx-auto">
+                            <a href="contacts.html">say hi</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--  Sticky Footer https://getbootstrap.com/docs/5.0/examples/sticky-footer/ -->
+    <!-- Also Note the classes on the html and body tags -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col my-auto" id="copyright">
+                    <span class="text-white">&copy; 2022-2023 | <a href="index.html">Maxim Nyanin</a></span>
+                </div>
+                <div class="col">
+                    <div class="container" style="display: inline-flex; justify-content: flex-end;">
+                        <div class="footer-icon"><a href="https://github.com/MaxisNy"><i class="fa fa-github"
+                                    style="font-size:30px; color:white"></i></a></div>
+
+                        <div class="footer-icon"><a href="https://www.linkedin.com/in/maxim-nyanin-0373bb1a0/"><i
+                                    class="fa fa-linkedin" style="font-size:30px; color:white"></i></a></div>
+                        <div class="footer-icon" id="last-icon"><a href="mailto:max.nyanin@mail.utoronto.ca"
+                                target="_blank"><i class="fa fa-envelope" style="font-size:30px; color:white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Javascript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
